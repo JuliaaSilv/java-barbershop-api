@@ -1,0 +1,28 @@
+#spring:
+#  application:
+#    name: barber-shop-api
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/db_barber_shop
+#    username: root
+#    password: root
+#  jpa:
+#    hibernate:
+#      ddl-auto: validate
+
+spring:
+  application:
+    name: barber-shop-api
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_barber_shop
+    username: root
+    password: julia
+  jpa:
+    hibernate:
+      ddl-auto: update
+  flyway:
+    enabled: true
+    url: jdbc:mysql://localhost:3306/db_barber_shop
+    user: root
+    password: julia
+    locations: classpath:db/migration
+    validate-on-migrate: false
